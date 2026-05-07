@@ -11,7 +11,9 @@ const auth = require("./middleware/auth");
 const Note = require("./models/Note");
 
 // Middlewares
-app.use(cors());
+app.use(cors({
+  origin: "https://your-frontend.vercel.app"
+}));
 app.use(express.json());
 
 // Routes
