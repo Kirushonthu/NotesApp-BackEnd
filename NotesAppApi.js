@@ -12,7 +12,7 @@ const Note = require("./models/Note");
 
 // Middlewares
 app.use(cors({
-  origin: "https://notes-app-front-end.vercel.app"
+  origin: /\.vercel\.app$/
 }));
 app.use(express.json());
 
